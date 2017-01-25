@@ -7,6 +7,10 @@ buildscript {
     }
 }
 
+plugins {
+  id "net.ltgt.apt" version "0.8" //annotation processing
+}
+
 apply plugin: 'groovy'
 apply plugin: 'eclipse'
 apply plugin: 'com.novoda.bintray-release'
@@ -24,11 +28,15 @@ jar {
 
 repositories {
     mavenCentral()
+    maven { url "http://dl.bintray.com/xinra/nucleus" }
 }
 
 dependencies {
     compile 'com.google.guava:guava:19.0'
     compile 'org.codehaus.groovy:groovy:2.4.7'
+    compile 'org.springframework:spring-context:4.3.5.RELEASE'
+    compileOnly 'com.xinra.nucleus:interface-generator:0.1.1'
+    apt 'com.xinra.nucleus:interface-generator:0.1.1'
     testCompile group: 'junit', name: 'junit', version: '4.+'
 }
 
@@ -47,6 +55,10 @@ sourceSets {
   // put everything into /src/*/groovy
   main.java.srcDirs = []
   test.java.srcDirs = []
+}
+
+compileGroovy {
+  groovyOptions.javaAnnotationProcessing = true
 }
 
 task wrapper(type: Wrapper) {
