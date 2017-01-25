@@ -56,11 +56,11 @@ public class DynamicProxyDtoFactory implements DtoFactory {
 
     @Override
     public String toString() {
-      return "DynamicProxy of " + typeName + " [" 
+      return "DynamicProxy of " + typeName + " ["
           + properties.entrySet().stream()
             .map(entry -> entry.getKey() + "=" + entry.getValue())
             .collect(Collectors.joining(", "))
           + "]";
-    }   
+    }
   }
 }
