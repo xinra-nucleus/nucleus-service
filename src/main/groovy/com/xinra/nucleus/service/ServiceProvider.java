@@ -10,6 +10,6 @@ public interface ServiceProvider {
   /**
    * Returns an instance of the desired service.
    */
-  public <T extends Service> T getService(Class<T> type);
+  <T extends Service> T getService(Class<T> type);
 
 }

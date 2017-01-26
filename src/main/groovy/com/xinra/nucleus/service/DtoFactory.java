@@ -10,6 +10,6 @@ public interface DtoFactory {
   /**
    * Creates a DTO instance of the desired type.
    */
-  public <T extends Dto> T createDto(Class<T> type);
+  <T extends Dto> T createDto(Class<T> type);
 
 }
