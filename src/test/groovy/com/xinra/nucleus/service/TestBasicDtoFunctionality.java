@@ -1,8 +1,9 @@
-package com.xinra.nucleus.service.test;
+package com.xinra.nucleus.service;
 
 import com.xinra.nucleus.service.DtoFactory;
 import com.xinra.nucleus.service.DynamicProxyDtoFactory;
 import com.xinra.nucleus.service.ImplDtoFactory;
+import com.xinra.nucleus.service.test.TestDto;
 import java.util.Arrays;
 import org.junit.Test;
 import org.junit.runner.RunWith;

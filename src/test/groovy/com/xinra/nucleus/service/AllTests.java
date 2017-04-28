@@ -1,4 +1,4 @@
-package com.xinra.nucleus.service.test;
+package com.xinra.nucleus.service;
 
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
