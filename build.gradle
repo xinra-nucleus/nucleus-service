@@ -44,11 +44,11 @@ publish {
     userOrg = 'xinra'
     repoName = 'nucleus'
     groupId = 'com.xinra.nucleus'
-    artifactId = 'service'
+    artifactId = 'nucleus-service'
     publishVersion = '0.1.0'
     licences = ['MIT']
     desc = 'Nucleus service layer'
-    website = 'https://github.com/xinra-nucleus/service'
+    website = 'https://github.com/xinra-nucleus/nucleus-service'
 }
 
 sourceSets {
