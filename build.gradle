@@ -46,7 +46,7 @@ publish {
     groupId = 'com.xinra.nucleus'
     artifactId = 'nucleus-service'
     publishVersion = '0.1.0'
-    licences = ['MIT']
+    licences = ['BSD 3-Clause']
     desc = 'Nucleus service layer'
     website = 'https://github.com/xinra-nucleus/nucleus-service'
 }
