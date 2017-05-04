@@ -9,15 +9,19 @@ public class TestDtoImpl extends DtoImpl implements TestDto {
   public int getFoo() {
     return foo;
   }
+  
   public void setFoo(int foo) {
     this.foo = foo;
   }
+  
   public boolean getBar() {
     return bar;
   }
+  
   public boolean isBar() {
     return bar;
   }
+  
   public void setBar(boolean bar) {
     this.bar = bar;
   }
