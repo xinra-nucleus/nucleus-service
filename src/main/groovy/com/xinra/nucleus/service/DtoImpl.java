@@ -20,6 +20,6 @@ import com.xinra.nucleus.interfacegenerator.InterfaceNamingStrategy;
     namingStrategy = InterfaceNamingStrategy.EXCEPT_LAST_FOUR_CHARS,
     propertyConstants = true
   )
-public class DtoImpl implements Dto {
+public abstract class DtoImpl implements Dto {
 
 }

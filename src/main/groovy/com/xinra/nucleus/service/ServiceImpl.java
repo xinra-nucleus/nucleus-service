@@ -9,6 +9,6 @@ import com.xinra.nucleus.interfacegenerator.InterfaceNamingStrategy;
  * @author Erik Hofer
  */
 @GenerateInterface(namingStrategy = InterfaceNamingStrategy.EXCEPT_LAST_FOUR_CHARS)
-public class ServiceImpl implements Service {
+public abstract class ServiceImpl implements Service {
 
 }
